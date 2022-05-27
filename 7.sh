@@ -1,9 +1,10 @@
 echo "Enter the value"
 read n
 
-if (( $n != 0 ))
+res=$(( $n % 2 ))
+if (( $res != 0 ))
 	then
-	echo " $n is odd "
+	echo "$n is odd "
 	
 else
 	echo "$n is even"
